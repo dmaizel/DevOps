@@ -148,7 +148,7 @@ steps:
     title: "Cloning repository for DEV"
     type: "git-clone"
     git: "github"
-    repo: aperture-sci/gitops_applications
+    repo: dmaizel/gitops_applications
     revision: "main"
     depth: 1
     exclude_blobs: true
@@ -167,7 +167,7 @@ steps:
     type: git-commit:0.1.4
     stage: dev
     arguments:
-      repo: aperture-sci/gitops_applications
+      repo: dmaizel/gitops_applications
       git: github-lr
       working_directory: /codefresh/volume/gitops_applications
       commit_message: "Update image to deploy to ${{COLOR}} (${{CF_SHORT_REVISION}})"
@@ -207,7 +207,7 @@ steps:
     title: "Cloning repository for QA"
     type: "git-clone"
     git: "github"
-    repo: aperture-sci/gitops_applications
+    repo: dmaizel/gitops_applications
     revision: "main"
     depth: 1
     exclude_blobs: true
@@ -226,7 +226,7 @@ steps:
     type: git-commit:0.1.4
     stage: qa
     arguments:
-      repo: aperture-sci/gitops_applications
+      repo: dmaizel/gitops_applications
       git: github-lr
       working_directory: "/codefresh/volume/gitops_applications"
       commit_message: "Update image to deploy to ${{COLOR}} (${{CF_SHORT_REVISION}})"
@@ -257,7 +257,7 @@ steps:
     title: "Cloning repository for staging"
     type: "git-clone"
     git: "github"
-    repo: aperture-sci/gitops_applications
+    repo: dmaizel/gitops_applications
     revision: "main"
     depth: 1
     exclude_blobs: true
@@ -276,7 +276,7 @@ steps:
     type: git-commit:0.1.4
     stage: staging
     arguments:
-      repo: aperture-sci/gitops_applications
+      repo: dmaizel/gitops_applications
       git: github-lr
       working_directory: "/codefresh/volume/gitops_applications"
       commit_message: "Update image to deploy to ${{COLOR}} (${{CF_SHORT_REVISION}})"
@@ -307,7 +307,7 @@ steps:
     title: "Cloning repository for PROD"
     type: "git-clone"
     git: "github"
-    repo: aperture-sci/gitops_applications
+    repo: dmaizel/gitops_applications
     revision: "main"
     depth: 1
     exclude_blobs: true
@@ -326,7 +326,7 @@ steps:
     type: git-commit:0.1.4
     stage: prod
     arguments:
-      repo: aperture-sci/gitops_applications
+      repo: dmaizel/gitops_applications
       git: github-lr
       working_directory: "/codefresh/volume/gitops_applications"
       commit_message: "Update image to deploy to ${{COLOR}} (${{CF_SHORT_REVISION}})"
