@@ -7,7 +7,7 @@ spec:
   generators:
   - list:
       elements:
-      - cluster: demo-dev
+      - cluster: in-cluster
         short: dev
       - cluster: prod-east
         short: prod
