@@ -31,7 +31,7 @@ spec:
         namespace: '{{ns}}'
       source:
         path: 'manifests/trio-app/aperture-{{short}}'
-        repoURL: 'https://github.com/aperture-sci/DevOps'
+        repoURL: 'https://github.com/dmaizel/DevOps'
         targetRevision: main
       project: default
       syncPolicy:

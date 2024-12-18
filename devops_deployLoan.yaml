@@ -18,7 +18,7 @@ steps:
   clone:
     title: "Cloning repository"
     type: "git-clone"
-    repo: "aperture-sci/DevOps"
+    repo: "dmaizel/DevOps"
     depth: 1
     revision: "main"
     git: github-app
@@ -79,7 +79,7 @@ steps:
       type: git-commit:0.1.3
       stage: deploy
       arguments:
-        repo: aperture-sci/DevOps
+        repo: dmaizel/DevOps
         git: github-app
         working_directory: '/codefresh/volume/DevOps'
         commit_message: "[promotion:sequential-${{SERVICE}}] Update image tag for ${{SERVICE}} and bump Chart version"

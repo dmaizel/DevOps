@@ -20,7 +20,7 @@ steps:
     title: "Cloning repository"
     stage: "clone"
     type: "git-clone"
-    repo: "aperture-sci/DevOps"
+    repo: "dmaizel/DevOps"
     revision: "main"
     git: github-app
     depth: 1
@@ -84,7 +84,7 @@ steps:
     type: git-commit:0.1.4
     stage: deploy
     arguments:
-      repo: aperture-sci/DevOps
+      repo: dmaizel/DevOps
       git: github-app
       working_directory: "${{CF_VOLUME_PATH}}/${{CF_REPO_NAME}}"
       commit_message: "[promotion:trio-flow] ${{COMMIT_MESSAGE}} for ${{APPENV}}"
